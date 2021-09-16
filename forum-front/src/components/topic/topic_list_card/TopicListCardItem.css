@@ -1,0 +1,56 @@
+
+.topic-list-card-item {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+}
+
+.topic-list-card-item .topic-icon {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+
+.topic-list-card-item .topic-info-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.topic-list-card-item .topic-info-link:hover .topic-name {
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+}
+
+.topic-list-card-item .topic-name {
+    transition: font-size 100ms ease-in-out;
+    font-size: 14px;
+}
+
+.topic-list-card-item .topic-follower-info {
+    font-size: 11px;
+}
+
+.topic-list-card-item .topic-follow-btn {
+    padding: 0.75em 0;
+    width: 11ch;
+    border-radius: 7em;
+    background-color: white;
+    box-shadow: 0 0 0 2px rgb(255, 82, 82);
+    color:rgb(255, 82, 82);
+    border:none;
+    display: block;
+    margin-left: auto;
+    font-size: 13px;
+    cursor: pointer;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+    transition: background-color 200ms ease-in-out;
+}
+
+.topic-list-card-item .topic-follow-btn:hover {
+    /* background-color: rgb(255, 112, 112); */
+    background-color: rgb(255, 239, 239);
+}

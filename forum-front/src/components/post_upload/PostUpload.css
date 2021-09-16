@@ -1,0 +1,35 @@
+.post-upload {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr auto 300px 1fr;
+    grid-template-areas: ". post-upload-tab sidebar .";
+    gap: 30px;
+    padding: 50px 0;
+}
+
+.post-upload .topic-select-section {
+    margin-bottom: 20px;
+    width: fit-content;
+    border-radius: 3px;
+}
+
+.post-upload .post-message {
+    background-color: white;
+    border-radius: 5px;
+    padding: 1em;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.post-upload .post-upload-tab-main {
+    width: 100%;
+    grid-area: post-upload-tab;
+}
+
+.post-upload .sidebar {
+    width: 100%;
+    grid-area: sidebar;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}

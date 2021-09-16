@@ -1,0 +1,64 @@
+.topic-menu-options {
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    border-radius: 5px;
+    padding: 0.5em;
+    overflow-y: auto;
+    max-width: 200px;
+    margin-top: 5px;
+}
+
+.topic-menu-options .topic-option {
+    display: flex;
+    padding: 5px 5px;
+    cursor: pointer;
+    border-radius: 3px;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    gap: 10px;
+    transition: background-color 100ms ease-in-out;
+}
+
+.topic-menu-options .topic-option:hover {
+    background-color: rgb(236, 236, 236);
+}
+
+.topic-menu-options .topic-filter {
+    display:block;
+    width: 100%;
+    font-size: 10.5pt;
+    padding: 0 5px;
+    height: 2em;
+    border-radius: 3px;
+    border:none;
+    outline: none;
+    box-shadow: 0 0 0 1px rgb(119, 119, 119);
+}
+
+.topic-menu-options .topic-filter:focus {
+    box-shadow: 0 0 0 1px rgb(153, 0, 255)
+}
+
+.topic-menu-options .topic-filter-div {
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.topic-menu-options .topics {
+    margin-top: 20px;
+}
+
+.topic-menu-options .your-topics-label {
+    font-size: 10px;
+    letter-spacing: 1px;
+    color: gray;
+    padding: 5px;
+}
+
+.topic-menu-options .super-topic-icon {
+    height: 20px;
+    width: 20px;
+    object-fit: contain;
+}

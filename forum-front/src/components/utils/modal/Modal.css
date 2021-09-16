@@ -1,0 +1,15 @@
+.modal {
+    position: fixed;
+    width: 100%;
+    top: 60px;
+    left: 0;
+    height: calc(100vh - 60px); /* 60px is the height of the navbar */
+    background-color: rgba(0, 0, 0, 0.65);
+    z-index: 10;
+    overflow-y: auto;
+}
+
+.modal-main {
+    margin: 20px auto;
+    width: fit-content;
+}

@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+
+.signup {
+    width: 400px;
+    min-height: 500px;
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.signup .signup-header {
+    padding: 0.5em;
+    background-image: url('http://localhost:8000/static/assets/login_background2.png');
+    margin-bottom: 10px;
+}
+
+.signup .signup-form {
+    padding: 10px 30px;
+}
+
+.signup .close-btn-div {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.signup .close-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.signup .site-name {
+    font-family: 'Roboto Black', sans-serif;
+    font-size: 38pt;
+    text-align: center;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.signup .signup-text {
+    font-size: 24px;
+    font-weight: lighter;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.signup .signup-input-div {
+    margin-bottom: 20px;
+}
+
+.signup .signup-text-field {
+    width: 100%;
+}
+
+.signup .signup-input {
+    height: 40px;
+    padding: 3px 10px;
+    border: none;
+    box-shadow: 0 0 0 1px rgb(212, 212, 212);
+    border-radius: 4px;
+}
+
+.signup .signup-input:focus {
+    box-shadow: 0 0 0 2px indigo;
+    transition: box-shadow 100ms ease-in-out;
+    outline: none;
+}
+
+.signup .input-section {
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+
+.signup .signup-btn {
+    background-color: rgb(0, 141, 197);
+    width: 100px;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 30px;
+}
+
+.signup .signup-btn:hover {
+    background-color: rgb(0, 116, 161);
+    transition: background-color 150ms ease-in-out;
+}
+
+.signup .signup-btn:disabled {
+    background-color: rgb(183, 235, 255);
+    color: rgb(255, 255, 255);
+}
+
+.signup .login-link-section {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.signup .login-link-text {
+    color: rgb(26, 26, 27);
+    font-size: 14px;
+}
+
+.signup .login-link-btn {
+    background-color: transparent;
+    border: none;
+    color: rgb(0, 141, 197);
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.signup .login-link-btn:hover {
+    color:rgb(0, 107, 150);
+}

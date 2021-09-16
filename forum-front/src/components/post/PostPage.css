@@ -1,0 +1,45 @@
+
+.post-page {
+    display: grid;
+    grid-template-columns: 5em 1fr 300px 5em;
+    grid-template-areas: ". post-main sidebar .";
+    padding: 50px 0;
+    width: 100%;
+    gap: 30px;
+}
+
+.post-main {
+    grid-area: post-main;
+    background-color: white;
+    padding: 2em;
+    width: 100%;
+    border-radius: 12px;
+}
+
+.post-page .sidebar {
+    grid-area: sidebar;
+}
+
+.post-page .cmnt-form-div {
+    margin-bottom: 50px;
+}
+
+.post-page .main-comment-section {
+    margin: 0 20px;
+}
+
+.post-page .post-div {
+    margin-bottom: 50px;
+}
+
+.post-page .comment-section-header {
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.post-page .comment-sort-select {
+    padding: 0.5em;
+    border-radius: 5px;
+}

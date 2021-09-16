@@ -1,0 +1,113 @@
+.navbar {
+    position: fixed;
+    background-color: white;
+    /* background-image: url('http://localhost:8000/media/double-bubble.png'); */
+    background-position: center;
+    /* border-bottom: 3px solid rgb(0, 67, 155); */
+    box-shadow: 0 5px 5px -4px rgba(1,1,1,0.23);
+    height: 60px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 220px auto 2em 1fr 2em auto;
+    grid-template-areas: "logo topic-menu . searchbar . profile";
+    /* grid-template-rows: auto; */
+    padding: 10px 20px;
+    gap: 1em;
+    z-index: 10;
+    align-content: center;
+    /* background-image: linear-gradient(to right, rgb(175, 232, 255), rgb(137, 174, 255)); */
+}
+
+.navbar > * {
+    height: 100%;
+}
+
+.logo-section {
+    display: flex;
+    grid-area: logo;
+    place-items: center;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+    padding-right: 20px;
+}
+
+.navbar .website-name {
+    font-size: 30px;
+    font-family: 'Roboto Black';
+}
+
+.logo-img {
+    height: 36px;
+    width: 36px;
+}
+
+.topic-menu-section {
+    grid-area: topic-menu;
+}
+
+.searchbar-section {
+    grid-area: searchbar;
+}
+
+.profile-section {
+    grid-area: profile;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: right;
+}
+
+.sm-profile-menu-div {
+    display: none;
+}
+
+.create-post-link {
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: transparent;
+}
+
+.navbar .create-post-link:hover {
+    background-color: rgb(235, 206, 255);
+}
+
+.navbar :is(.login-btn, .signup-btn) {
+    cursor: pointer;
+    font-size: 15px;
+    padding: 0.5em;
+    width: 100px;
+    border-radius: 9999px;
+    border: none;
+    font-weight: bold;
+    transition: background-color 100ms ease-in-out;
+}
+
+:root {
+    --login-btns-color: rgb(255, 81, 0);
+}
+
+.navbar .login-btn {
+    background-color: var(--login-btns-color);
+    color: white;
+    border: 2px solid var(--login-btns-color);
+}
+
+.navbar .signup-btn {
+    background-color: white;
+    color: var(--login-btns-color);
+    border: 2px solid var(--login-btns-color);
+}
+
+.navbar .login-btn:hover {
+    background-color: rgba(255, 81, 0, 0.8);
+    border: 2px solid rgba(255, 81, 0, 0.8);
+}
+
+.navbar .signup-btn:hover {
+    background-color: rgba(255, 81, 0, 0.068);
+}

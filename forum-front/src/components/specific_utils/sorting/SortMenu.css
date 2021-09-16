@@ -1,0 +1,67 @@
+.sort-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* padding: 10px; */
+    background-color: white;
+    border-radius: 12px;
+}
+
+.sort-menu .sort-option {
+    width: 100%;
+    display: flex;
+    padding: 0.8em 2em;
+    align-items: center;
+    gap: 30px;
+    font-size: 14px;
+    background-color: transparent;
+    border: none;
+    transition: background-color 100ms ease-in-out;
+    overflow: hidden;
+    color: black;
+    cursor: pointer;
+    position: relative;
+}
+
+.sort-menu .sort-option:hover {
+    background-color: #F2F2F2;
+}
+
+.sort-menu .sort-option::after {
+    /* background-color: rgb(84, 0, 194); */
+    background-color: #e5e5e5;
+    content: '';
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    position: absolute;
+}
+
+.sort-menu .sort-option.selected::after {
+    content: '';
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: transform 300ms ease-in-out;
+}
+
+.sort-menu .sort-option > * {
+    z-index: 1;
+}
+
+.sort-menu .top-dropdown-icon {
+    margin-left: auto;
+}
+
+.sort-menu .sort-option.selected svg {
+    fill:  rgb(89, 0, 255);
+}
+
+.sort-menu .sort-option.selected {
+    font-weight: 500;
+}
+
+.sort-menu .sort-option svg {
+    fill: rgb(95, 95, 95);
+}

@@ -1,0 +1,41 @@
+.profile {
+    display: grid;
+    grid-template-columns: 260px 1fr 300px;
+    grid-template-areas: 'left-sidebar content-list right-sidebar';
+    padding-right: 50px;
+    gap: 30px;
+}
+
+.profile .menus {
+    scrollbar-width: thin;
+    overflow-y: auto;
+    padding: 30px 10px;
+    align-items: center;
+    background-color: white;
+    position: sticky;
+    top:0px;
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 60px);
+}
+
+.profile .left-profile-sidebar {
+    grid-area: left-sidebar;
+}
+
+.profile .profile-content-list {
+    grid-area: content-list;
+    padding: 20px 0;
+}
+
+.profile .right-profile-sidebar {
+    grid-area: right-sidebar;
+    padding: 20px 0;
+}
+
+.profile .line-div {
+    width: 100%;
+    height: 1px;
+    background-color: rgb(192, 192, 192);
+    margin: 30px 0;
+}

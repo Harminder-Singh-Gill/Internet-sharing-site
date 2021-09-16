@@ -1,0 +1,108 @@
+.comment-thread {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    gap: 1px;
+}
+
+.comment-thread .commenter-pic {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    /* box-shadow: 0 0 0 1px black; */
+    margin: 0 auto;
+}
+
+.comment-thread.child-cmnt-thread .commenter-pic {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+    /* box-shadow: 0 0 0 1px black; */
+}
+
+.comment-thread .comment-section {
+    flex: 1;
+    min-width: 0;
+}
+
+.comment-thread .replies {
+    width: 100%;
+}
+
+.comment-thread .vertical-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 30px;
+}
+
+.comment-thread .collapser {
+    width: 50%;
+    flex: 1;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.comment-thread .vertical-line {
+    width: 2px;
+    border-radius: 5px;
+    background-color: rgb(207, 207, 207);
+    margin: 0 auto;
+    height: 100%;
+}
+
+.comment-thread .collapser:hover .vertical-line {
+    background-color: rgb(102, 0, 128);
+}
+
+.comment-thread .load-more-btn {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    color: rgb(0, 110, 255);
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.comment-thread .load-more-btn:hover {
+    text-decoration: underline;
+}
+
+.comment-thread .point-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 10pt;
+}
+
+.comment-thread .comment-points {
+    margin: 2px 0;
+}
+
+.comment-thread .vote-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.comment-thread .point-section.upvote :is(.upvote-btn svg, p) {
+    fill: rgb(255, 115, 115);
+    color:rgb(255, 115, 115);
+}
+
+.comment-thread .point-section.downvote :is(.downvote-btn svg, p) {
+    
+    fill: rgb(172, 5, 5);
+    color:rgb(172, 5, 5);
+}
+
+.comment-thread .vote-btn svg {
+    fill: rgb(201, 201, 201);
+}
+
+.comment-thread .comment-thread-main {
+    width: 100%;
+}

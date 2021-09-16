@@ -1,0 +1,19 @@
+body {
+  background-color: rgb(247, 247, 247);
+  background-color: #f9f9f9;
+  /* background-image: linear-gradient(to right, rgb(141, 80, 255), rgb(239, 122, 255)); */
+  /* background-image: linear-gradient(to right, rgb(175, 232, 255), rgb(137, 174, 255)); */
+  color: rgb(26, 26, 27);
+}
+
+.card-shadow {
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+}
+
+.darker-shadow {
+  box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}

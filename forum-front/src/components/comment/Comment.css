@@ -1,0 +1,80 @@
+.comment {
+    width: 100%;
+    padding: 0 10px;
+    background-color: white;
+}
+
+.comment .cmnt-header {
+    display: flex;
+    gap: 1ch;
+    font-size: 9pt;
+}
+
+.comment .cmnt-posted-date {
+    color: rgb(117, 117, 117);
+}
+
+.comment .cmnt-content {
+    padding-top: 20px;
+    width: 100%;
+    overflow-wrap:break-word;
+    color: rgb(26, 26, 27);
+    font-size: 14px;
+    min-height: 60px;
+    
+}
+
+.comment .cmnt-footer {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    padding: 2px 0;
+}
+
+.comment .footer-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    border-radius: 3px;
+    color: rgb(82, 82, 82);
+    font-weight: bold;
+    cursor: pointer;
+    height: 100%;
+}
+
+.comment .footer-btn:hover {
+    background-color: rgb(216, 216, 216);
+}
+
+.comment.saved .save-btn {
+    color: rgb(255, 145, 0);
+}
+
+.comment.reply-mode .reply-btn {
+    color: indigo;
+}
+
+.comment .cmnt-point-stats {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 9pt;
+    gap: 5px;
+}
+
+.comment .stat {
+    display: flex;
+    width: 4ch;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    color:rgb(82, 82, 82);
+    fill:rgb(172, 172, 172);
+}
+
+.comment .reply-form {
+    padding-top: 10px;
+}

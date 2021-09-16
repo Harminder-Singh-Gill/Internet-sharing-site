@@ -1,0 +1,65 @@
+.profile-menu-option .profile-option-btn {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    margin: 10px;
+    border-radius: 3px;
+    transition: background-color 100ms ease-in-out;
+}
+
+.profile-menu-option .profile-option-btn:hover {
+    background-color: rgb(245, 245, 245);
+}
+
+.profile-menu-option .profile-options {
+    padding: 0 10px;
+}
+
+.profile-menu-option .profile-option {
+    width: 100%;
+    padding: 0.75em 1em;
+    font-size: 14px;
+    transition: background-color 100ms ease-in-out;
+    border-radius: 3px;
+    color: rgb(73, 73, 73);
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    text-align: left;
+    text-indent: 30px;
+}
+
+.profile-menu-option .profile-option:hover {
+    background-color: rgb(226, 226, 226);
+}
+
+.profile-menu-option .main-profile-option {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    border-radius: 3px;
+    transition: background-color 100ms ease-in-out;
+}
+
+.profile-menu-option .main-profile-option:hover {
+    background-color: rgb(230, 230, 230);
+}
+
+.profile-menu-option .profile-link {
+    flex: 1;
+    display: flex;
+    padding: 0.75em 1em;
+    gap: 20px;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    color: rgb(73, 73, 73);
+}
+
+.profile-menu-option .profile-link > svg{
+    fill: rgb(73, 73, 73);
+}

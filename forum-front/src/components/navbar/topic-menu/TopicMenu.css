@@ -1,0 +1,45 @@
+.topic-menu {
+    height: fit-content;
+    width: 200px;
+    position: relative;
+}
+
+.topic-menu-select {
+    cursor: pointer;
+    border: none;
+    background-color: white;
+    transition: box-shadow 100ms ease-in-out;
+    display: flex;
+    height: 35px;
+    width: 100%;
+    padding: 5px 5px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 20px;
+    box-shadow: 0 0 0 1px gray;
+}
+
+.topic-menu-select:hover {
+    box-shadow: 0 0 0 1px gray, 0 1px 5px rgba(0, 0, 0, 0.15);
+}
+
+.topic-icon-selected, .topic-icon-option {
+    height: 25px;
+    width: 25px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.topic-menu .super-topic-icon {
+    height: 20px;
+    width: 20px;
+    object-fit: contain;
+    margin-left: 10px;
+}
+
+.topic-name-selected, .topic-name-option {
+    display: flex;
+    align-items: center;
+    padding: 0 5px;
+    font-size: 10.5pt;
+}

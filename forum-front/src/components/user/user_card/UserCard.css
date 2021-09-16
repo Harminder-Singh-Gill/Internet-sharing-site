@@ -1,0 +1,97 @@
+.user-card {
+    width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: white;
+}
+
+.user-card .header-section {
+    background-image: linear-gradient(to left, rgb(0, 217, 255), rgb(78, 119, 255));
+    padding: 0.75em 1em;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.user-card .circle-profile-pic {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    /* box-shadow: 0 0 0 2px white; */
+    object-fit: cover;
+}
+
+.user-card .username {
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border-bottom: 2px solid transparent;
+}
+
+.user-card .username:hover {
+   border-bottom: 2px solid white;
+   /* padding-bottom: 2px; */
+}
+
+.user-card .body-section {
+    background-color: white;
+    padding: 1em;
+}
+
+.user-card .description {
+    margin-bottom: 30px;
+}
+
+.user-card .follower-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.user-card .btn {
+    padding: 10px;
+    width: 100px;
+    margin-left: auto;
+    font-size: 14px;
+    border-radius: 9999px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    transition: background-color 150ms ease-in-out;
+}
+
+.user-card .follow-btn {
+    background-color: rgb(78, 119, 255);
+}
+
+.user-card .follow-btn:hover {
+    background-color: rgba(78, 119, 255, 0.8);
+}
+
+.user-card .follower-stat {
+    width: fit-content;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user-card .follower-num {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.user-card .follower-label {
+    font-size: 13px;
+    width: 9ch;
+}
+
+.user-card .creation-date-section {
+    display: flex;
+    align-items: center;
+    padding: 0.5em;
+    border-radius: 3px;
+    gap: 10px;
+    font-size: 14px;
+}

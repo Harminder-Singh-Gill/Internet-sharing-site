@@ -1,0 +1,123 @@
+.topic-create {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+}
+
+
+
+.topic-create .topic-create-title {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.topic-create .input-div > label {
+    font-size: 13px;
+}
+
+.topic-create .aside-design {
+    width: 20%;
+    object-fit: cover;
+}
+.topic-create .topic-create-box {
+    display: flex;
+    width: 80%;
+    min-width: 400px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.topic-create .topic-create-main {
+    background-color: rgb(253, 253, 253);
+    padding: 4em 3em 2em 3em;
+    flex: 1;
+}
+
+.topic-create .input-div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+.topic-create .topic-name-text-field {
+    width: 40%;
+    min-width: 300px;
+}
+
+.topic-create :is(.topic-name-input, .description-textarea) {
+    padding: 0.75em 1em;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.topic-create .description-textarea {
+    width: 100%;
+    height: 150px;
+    resize: vertical;
+    border: none;
+    box-shadow: 0 0 0 1px gray;
+}
+
+.topic-create :is(.category-option, .category-selected-option) {
+    font-size: 14px;
+    padding: 0.75em 1em !important;
+}
+
+.topic-create :is(.category-select) {
+    width: 40%;
+}
+
+.topic-create .category-select-div {
+    margin-bottom: 50px;
+}
+
+.topic-create :is(.category-selected-option, .category-options) {
+    border-radius: 3px;
+}
+
+.topic-create .access-radio-option {
+    text-align: left;
+}
+
+.topic-create .access-radio-title {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.topic-create .access-radio-description {
+    color: gray;
+    font-size: 12px;
+}
+
+.topic-create .create-topic-button {
+    padding: 0.75em 1em;
+    border: none;
+    background-color: blue;
+    cursor: pointer;
+    border-radius: 4px;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.topic-create .create-topic-button:hover {
+    background-color: rgba(0, 0, 255, 0.726);
+}
+
+.topic-create .create-topic-button:disabled {
+    background-color: rgb(199, 199, 199);
+    cursor: default;
+}
+
+.topic-create .access-radio-div {
+    margin-bottom: 50px;
+}
+
+.topic-create .access-label {
+    font-size: 16px !important;
+    margin-bottom: 20px;
+    font-weight: bolder;
+}

@@ -1,0 +1,17 @@
+.rules-card {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.rules-card .title-header {
+    background-color: rgb(255, 83, 83);
+    padding: 15px 20px;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.rules-card .rules {
+    padding: 20px;
+}

@@ -1,0 +1,10 @@
+.topic-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.topic-sidebar .topic-about-card-sticky {
+    position: sticky;
+    top: 20px;
+}

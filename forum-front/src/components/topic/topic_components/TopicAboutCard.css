@@ -1,0 +1,102 @@
+.topic-about-card {
+    width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.topic-about-card .title-section {
+    padding: 1em;
+    font-size: 16px;
+    font-weight: 500;
+    background-image: linear-gradient(to right, rgb(141, 80, 255), rgb(239, 122, 255));
+    color: white;
+}
+
+.topic-about-card .topic-name {
+    border-bottom: 2px solid transparent;
+}
+
+.topic-about-card .topic-name:hover {
+    border-bottom: 2px solid white;
+}
+
+.topic-about-card .body-section {
+    background-color: white;
+    padding: 1em;
+}
+
+.topic-about-card .description {
+    margin-bottom: 30px;
+}
+
+.topic-about-card .follower-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.topic-about-card .btn {
+    padding: 0.75em 0;
+    width: 100px;
+    font-size: 14px;
+    border-radius: 9999px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    transition: background-color 150ms ease-in-out;
+}
+
+.topic-about-card .follow-btn {
+    margin-left: auto;
+    background-color: rgb(141, 80, 255);
+}
+
+.topic-about-card .follow-btn:hover {
+    background-color: rgb(141, 80, 255, 0.8);
+}
+
+.topic-about-card .create-post-btn-div {
+    display: flex;
+    justify-content: center;
+}
+
+.topic-about-card .create-post-btn {
+    width: 100%;
+    background-color: rgb(239, 122, 255);
+}
+
+.topic-about-card .create-post-btn:hover {
+    background-color: rgba(239, 122, 255, 0.8);
+}
+
+.topic-about-card .follower-stat {
+    width: fit-content;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.topic-about-card .follower-num {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.topic-about-card .follower-label {
+    font-size: 13px;
+    width: 9ch;
+}
+
+.topic-about-card .creation-date-section {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    /* background-color: rgb(37, 0, 63); */
+    padding: 0.5em;
+    border-radius: 3px;
+    gap: 10px;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+

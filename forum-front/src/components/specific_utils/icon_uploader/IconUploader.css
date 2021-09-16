@@ -1,0 +1,84 @@
+.icon-uploader {
+    width: 800px;
+    background-color: white;
+    border-radius: 12px;
+    margin-top: 50px;
+    overflow: hidden;
+}
+
+.icon-uploader .image-preview {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    margin: auto;
+    display:block;
+    margin-bottom: 2em;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.icon-uploader .react-crop-div {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(41, 41, 41);
+    padding: 1em;
+    border-radius: 5px;
+}
+
+.icon-uploader main {
+    padding: 2em;
+}
+
+.icon-uploader header {
+    padding: 2em 2em 1em;
+    font-weight: bold;
+    display: flex;
+    border-bottom: 2px solid rgb(218, 218, 218);
+}
+
+.icon-uploader .buttons {
+    margin-left: auto;
+    /* background-color: green; */
+    height: fit-content;
+    display: flex;
+    gap: 0.75em;
+}
+
+.icon-uploader .save-btn {
+    width: 100px;
+    background-color: rgb(0, 162, 255);
+}
+
+.icon-uploader .save-btn:hover {
+    background-color: rgba(0, 162, 255, 0.8); 
+}
+
+.icon-uploader .change-img-btn:hover {
+    background-color: rgba(64, 185, 255, 0.8);
+}
+
+.icon-uploader .cancel-btn:hover {
+    background-color: rgba(0, 162, 255, 0.05);
+}
+
+.icon-uploader .cancel-btn {
+    background-color: rgb(255, 255, 255);
+    /* box-shadow: 0 0 0 2px red; */
+    border: 2px solid rgb(0, 162, 255);
+    width: 100px;
+    color: rgb(0, 162, 255);
+}
+
+.icon-uploader .change-img-btn {
+    background-color: rgb(64, 185, 255);
+}
+
+.icon-uploader :is(.save-btn, .change-img-btn) {
+    color: white;
+    width: 100px;
+}
+
+.icon-uploader .title {
+    font-size: 36px;
+    color: gray;
+    font-weight: 500;
+}

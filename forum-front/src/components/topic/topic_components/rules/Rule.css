@@ -1,0 +1,37 @@
+.rule {
+    width: 100%;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.rule .rule-expander {
+    display: flex;
+    gap: 5px;
+}
+
+.rule .rule-expander > svg {
+    margin-left: auto;
+}
+
+.rule .rule-title {
+    font-size: 14px;
+    flex: 1;
+}
+
+.rule .rule-no {
+    font-size: 14px;
+}
+
+.rule .rule-expander svg {
+    width: 14px;
+    height: 14px;
+}
+.rule .rule-expander svg path{
+    fill: gray;
+}
+
+.rule .rule-description {
+    padding: 10px 20px 0;
+    font-size: 14px;
+    color: rgb(87, 87, 87);
+}

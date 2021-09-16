@@ -1,0 +1,87 @@
+.comment-preview {
+    padding: 0.5em;
+    background-color: white;
+}
+
+.comment-preview.view-mode .main-cmnt {
+    margin: 20px;
+    box-shadow: 0 0 0 1px rgb(175, 175, 175);
+    border-radius: 12px;
+    padding: 0.5em;
+}
+
+.comment-preview .cmnt-preview-header {
+    margin: 10px 0;
+    display: flex;
+    gap: 1ch;
+    font-size: 9pt;
+    padding: 0 10px;
+}
+
+.comment-preview .cmnt-posted-date {
+    color: rgb(117, 117, 117);
+}
+
+.comment-preview .cmnt-content {
+    padding: 10px;
+    width: 100%;
+    overflow-wrap:break-word;
+    color: rgb(26, 26, 27);
+    font-size: 14px;
+}
+
+.comment-preview .cmnt-footer {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    padding: 2px 0;
+}
+
+.comment-preview .footer-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    border-radius: 3px;
+    color: rgb(82, 82, 82);
+    font-weight: bold;
+    cursor: pointer;
+    height: 100%;
+}
+
+.comment-preview .footer-btn:hover {
+    background-color: rgb(216, 216, 216);
+}
+
+.comment-preview.saved .save-btn {
+    color: rgb(255, 145, 0);
+}
+
+.comment-preview.reply-mode .reply-btn {
+    color: indigo;
+}
+
+.comment-preview .cmnt-point-stats {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 9pt;
+    gap: 5px;
+}
+
+.comment-preview .stat {
+    display: flex;
+    width: 4ch;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    color:rgb(82, 82, 82);
+    fill:rgb(172, 172, 172);
+}
+
+.comment-preview .reply-form {
+    padding-top: 10px;
+    margin: 1em;
+}

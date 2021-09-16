@@ -1,0 +1,18 @@
+.sidebar-card {
+    width: 100%;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.sidebar-card .title-section {
+    padding: 1em;
+    font-size: 20px;
+    background-color: indigo;
+}
+
+.sidebar-card .content-section {
+    padding: 1em;
+    font-size: 14px;
+    background-color: white;
+}
+

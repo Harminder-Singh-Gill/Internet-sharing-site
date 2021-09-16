@@ -1,0 +1,42 @@
+.content-list {
+  width: 100%;
+}
+
+.content-list .content-item {
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  overflow: hidden;
+  /* box-shadow: 0 0 0 1px rgb(175, 175, 175); */
+}
+
+.content-list .loading-icon {
+  border: 5px solid transparent;
+  border-radius: 50%;
+  border-top: 5px solid gainsboro;
+  border-right: 5px solid gainsboro;
+  width: 30px;
+  height: 30px;
+  -webkit-animation: spin 0.5s linear infinite; /* Safari */
+  animation: spin 0.5s linear infinite;
+  margin: 0 auto;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.content-list .no-content-message {
+  font-size:40px;
+  text-align: center;
+  color: rgb(201, 201, 201);
+  font-weight: bold;
+  padding: 0.5em;
+}

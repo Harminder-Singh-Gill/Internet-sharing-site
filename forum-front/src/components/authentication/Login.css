@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+
+.login {
+    width: 400px;
+    min-height: 500px;
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.login .login-header {
+    padding: 0.5em;
+    background-image: url('http://localhost:8000/static/assets/login_background2.png');
+    margin-bottom: 10px;
+}
+
+.login .login-form {
+    padding: 10px 30px;
+}
+
+.login .close-btn-div {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.login .close-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.login .site-name {
+    font-family: 'Roboto Black', sans-serif;
+    font-size: 38pt;
+    text-align: center;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.login .login-text {
+    font-size: 24px;
+    font-weight: lighter;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.login .invalid-credentials-message {
+    box-shadow: 0 0 0 1px rgb(255, 86, 86);
+    text-align: center;
+    padding: 10px;
+    color: rgb(255, 86, 86);
+    font-size: 14px;
+    background-color: rgb(255, 236, 236);
+    margin-bottom: 10px;
+    border-radius: 3px;
+}
+
+.login .login-input {
+    width: 100%;
+    display:block;
+    height: 40px;
+    margin-bottom: 20px;
+    padding: 3px 10px;
+    border: none;
+    box-shadow: 0 0 0 1px rgb(212, 212, 212);
+    border-radius: 4px;
+}
+
+.login .login-input:focus {
+    box-shadow: 0 0 0 2px indigo;
+    transition: box-shadow 100ms ease-in-out;
+    outline: none;
+}
+
+.login .input-section {
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.login .login-btn {
+    background-color: rgb(0, 141, 197);
+    width: 100px;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 30px;
+}
+
+.login .login-btn:hover {
+    background-color: rgb(0, 116, 161);
+    transition: background-color 150ms ease-in-out;
+}
+
+.login .login-btn:disabled {
+    background-color: rgb(183, 235, 255);
+    color: rgb(255, 255, 255);
+}
+
+.login .signup-link-section {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.login .signup-link-text {
+    color: rgb(26, 26, 27);
+    font-size: 14px;
+}
+
+.login .signup-link-btn {
+    background-color: transparent;
+    border: none;
+    color: rgb(0, 141, 197);
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.login .signup-link-btn:hover {
+    color:rgb(0, 107, 150);
+}

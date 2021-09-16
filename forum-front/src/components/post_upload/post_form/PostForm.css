@@ -1,0 +1,77 @@
+:root {
+    --input-theme: rgb(0, 140, 255);
+}
+
+.post-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+} 
+
+.post-form :is(.post-form-text-field, .content-textarea) {
+    width: 100%;
+}
+
+.post-form .post-form-input, .post-form .content-textarea {
+    padding: 1em;
+    font-size: 14px;
+    border-radius: 3px;
+    border: none;
+    box-shadow: 0 0 0 1px gray;
+    outline: none;
+}
+
+.post-form :is(.post-form-input, .content-textarea):focus {
+    box-shadow: 0 0 0 2px var(--input-theme);
+}
+
+.post-form .content-textarea {
+    height: 100px;
+    resize: vertical;
+    min-height: 100px;
+}
+
+.post-form :is(.input-div, .content-textarea, .img-upload-field) {
+    margin-bottom: 20px;
+}
+
+.post-form .post-form-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1em;
+}
+
+.post-form .post-form-btn {
+    width: 120px;
+    height: 42px;
+    font-size: 16px;
+    border: none;
+    border-radius: 9999px;
+    font-weight: 500;
+}
+
+.post-form .cancel-btn {
+    color: var(--input-theme);
+    box-shadow: 0 0 0 2px var(--input-theme);
+}
+
+.post-form .cancel-btn:hover {
+    background-color: rgba(0, 140, 255, 0.1);
+}
+
+.post-form .post-btn {
+    color: white;
+    background-color: var(--input-theme);
+    cursor: pointer;
+    transition: background-color 200ms ease-in-out;
+}
+
+.post-form .post-btn:hover {
+    background-color: rgba(0, 140, 255, 0.8);
+}
+
+.post-form .post-btn:disabled {
+    background-color: rgba(0, 140, 255, 0.3);
+    cursor: auto;
+}

@@ -1,0 +1,42 @@
+.text-field {
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.text-field > input {
+    margin-bottom: 5px;
+    outline: none;
+    box-shadow: 0 0 0 1px gray;
+    border: none;
+    width: 100%;
+}
+
+.text-field > input:focus {
+    box-shadow: 0 0 0 2px black;
+}
+
+.text-field input:disabled {
+    background-color: rgb(230, 230, 230);
+}
+
+.text-field > .helper-text {
+    display: inline;
+    font-size: 12px;
+    color: gray;
+}
+
+.text-field.error > input {
+    box-shadow: 0 0 0 2px red;
+}
+
+.text-field.error > .helper-text {
+    color: red;
+}
+
+.text-field.valid > input {
+    box-shadow: 0 0 0 2px rgb(0, 155, 13);
+}
+
+.text-field.valid > .helper-text {
+    color: rgb(0, 155, 13);
+}

@@ -1,0 +1,107 @@
+.image-gallery {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    background-color:rgb(255, 255, 255);
+}
+
+.image-gallery .current-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.image-gallery .nav-btn {
+    position: absolute;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    width: 100px;
+    cursor: pointer;
+}
+
+.image-gallery .left-btn {
+    left: 0;
+}
+
+.image-gallery .right-btn {
+    right: 0;
+}
+
+.image-gallery .right-btn-svg {
+    float: right;
+    margin: 10px;
+}
+
+.image-gallery .left-btn-svg {
+    float: left;
+    margin: 10px;
+}
+
+.image-gallery .preview-btn {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 1em;
+    display:flex;
+    background-color: transparent;
+    border:none;
+    cursor:pointer;
+}
+
+.image-gallery .gallery-btn:hover .preview-svg path,
+.image-gallery .nav-btn:hover .nav-icon path {
+    fill: rgba(0, 0, 0, 0.795);
+    transition: fill ease-in 100ms;
+}
+
+.image-gallery .nav-icon path, 
+.image-gallery .preview-svg path {
+    fill: rgba(0, 0, 0, 0.582);
+}
+
+
+
+.image-gallery .preview-div {
+    padding: 1em;
+    padding: 70px;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, 100px);
+    grid-template-rows: repeat(auto-fit, 100px);
+    gap: 1em;
+    justify-content: center;
+}
+
+.image-gallery .preview-img-btn {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+
+.image-gallery .preview-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 3px;
+    object-fit: cover;
+}
+
+.image-gallery .preview-img:hover, .post .preview-img-btn:focus {
+    box-shadow: 0 0 0 2px rgb(162, 0, 255);
+    transition: box-shadow 50ms ease-in-out;
+}
+
+.post .img-count {
+    font-size: 9pt;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: white;
+    margin: 10px;
+}

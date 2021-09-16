@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Material+Icons");
+
+:root {
+  --img-base-url: "http://localhost:8000/static/assets/";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto";
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.btn {
+  border: none;
+  padding: 0.75em 1em;
+  text-align: center;
+  border-radius: 0.3em;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.btn:disabled {
+  cursor: default;
+}
+
+.round-btn {
+  border-radius: 9999px;
+}
+
+.App .content {
+  height: 100vh;
+  overflow: auto;
+  padding-top: 60px;
+}
+
+.App .content.modal-open {
+  overflow: hidden;
+  padding-right: 15px;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,52 @@
+.topic-list-card {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.topic-list-card .topic-list-header {
+    padding: 0.5em 1em;
+    padding-top: 2em;
+    font-size: 16px;
+    font-weight: bold;
+    background-image: linear-gradient(to left, rgb(255, 82, 82), orangered);
+    color: white;
+}
+
+.topic-list-card .topic-list {
+    padding: 1.5em;
+    /* margin-bottom: 30px; */
+}
+
+.topic-list-card .topic-list-footer {
+    padding: 1em;
+}
+
+.topic-list-card .follow-all-btn {
+    padding: 0.75em 0;
+    width: 13ch;
+    border-radius: 4px;
+    background-color: rgb(255, 82, 82);
+    border:none;
+    display: block;
+    margin-left: auto;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    transition: background-color 200ms ease-in-out;
+}
+
+.topic-list-card  .follow-all-btn:hover {
+    background-color: rgb(255, 112, 112);
+}
+
+.topic-list-card  .follow-all-btn:disabled {
+    background-color: rgb(255, 196, 196) !important;
+}
+
+.topic-list-card .topic-list-card-item-div {
+    margin-bottom: 20px;
+}

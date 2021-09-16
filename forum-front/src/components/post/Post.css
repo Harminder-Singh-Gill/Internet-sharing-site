@@ -1,0 +1,311 @@
+.post {
+    background-color: white;
+    width: 100%;
+    border-radius: 3px;
+    /* padding: 0 1em; */
+}
+
+.post .post-content {
+    height: 100%;
+    width: 100%;
+}
+
+.post  .post-title {
+    /* font-weight: 500; */
+    /* color: rgb(31, 31, 31); */
+    font-size: 15pt;
+    margin-bottom: 0.5em;
+    transition: color 200ms ease-in-out;
+}
+
+.post .topic-info {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-weight: 500;
+    color: rgb(51, 51, 51);
+    font-size: 14px;
+}
+
+.post .topic-icon {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    /* box-shadow: 0 0 0 1px black; */
+    object-fit: cover;
+}
+
+.post .post-header {
+    background-color: white;
+    padding: 1.5em 1.5em 0.5em;
+    border-radius: 2px;
+}
+
+.post .post-footer {
+    background-color: white;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    gap: 5px;
+    padding: 5px;
+    transition: background-color 200ms ease-in-out;
+    /* margin-top: 0.5em; */
+}
+
+.post .text-content {
+    padding: 1em 1.5em 0.5em;
+    font-size: 12pt;
+    color: #1A1A1B;
+}
+
+.post .post-data {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.post .post-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 10pt;
+    color: gray;
+}
+
+.post .image-content {
+    /* width: 100%; */
+    /* height: 300px; */
+    margin: 0 20px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.post .points-section {
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+}
+
+.post .points {
+    width: 2em;
+    display: flex;
+    justify-content: center;
+}
+
+
+.post .vote-btns path {
+    fill: gray;
+}
+
+.post .upvote .points {
+    color: rgb(0, 127, 212);
+}
+
+.post .downvote .points {
+    color: rgb(0, 84, 139);
+}
+
+.post .none .points {
+    color: black;
+}
+
+.post .upvote .upvote-btn path {
+    fill: rgb(0, 127, 212);
+}
+
+.post .downvote .downvote-btn path {
+    fill: rgb(0, 84, 139);
+}
+
+.post .points {
+    display:flex;
+    align-items: center;
+}
+
+.post .vote-btns {
+    display: flex;
+    gap: 2px;
+}
+
+.post .vote-btns button {
+    display: flex;
+    padding: 3px;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+}
+
+.post .vote-btns button:hover {
+    background-color: rgb(216, 216, 216);
+}
+
+.post .footer-btn {
+    display: flex;
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    gap: 3px;
+    border-radius: 3px;
+    color: rgb(141, 141, 141);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.post .footer-btn path {
+    fill: rgb(141, 141, 141);
+}
+
+.post .footer-btn:hover {
+    background-color: rgb(228, 228, 228);
+}
+
+.post .stats {
+    display:flex;
+    justify-content: flex-end;
+    flex: 1;
+    gap: 20px;
+    text-align: center;
+    color: gray;
+    padding: 0 10px;
+}
+
+.post .upvote-percentage {
+    color: gray;
+    font-size: 12px;
+    margin-left: auto;
+}
+
+.post .stat-label {
+    font-size: 8pt;
+}
+
+.post .stat-value {
+    font-size: 9pt;
+}
+
+.post .stat {
+    width: 50px;
+}
+
+.post .link-content {
+    /* width: 100%; */
+    /* height: 300px; */
+    height: 380px;
+    margin: 0 20px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.post.preview .image-content {
+    /* height: 300px; */
+    height: 100%;
+}
+
+.post .video-iframe {
+    height: 100%;
+    width: 100%;
+}
+
+.post .link-desc {
+    font-size: 12px;
+}
+
+.post .link-preview {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.post .link-svg {
+    fill: white;
+}
+
+.post .link-icon-container {
+    left:0; right:0; top: 0; bottom: 0;
+    margin: auto;
+    position: absolute;
+    border-radius: 50%;
+    padding: 15px;
+    width: 100px;
+    height: 100px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.534);
+    box-shadow: 0 0 0 3px white;
+}
+
+.post .link-info {
+    position: relative;
+    padding: 1em;
+    height: 100%;
+    background-image: radial-gradient(transparent, rgba(0, 0, 0, 0.705));
+    color: rgba(255, 255, 255, 0.63);
+    transition: background-color 200ms ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.post .link-info:hover {
+    background-color: rgba(0, 0, 0, 0.171);
+    
+}
+
+.post .link {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 65%;
+    font-size: 9pt;
+    padding: 1.5em;
+}
+
+.post .link-title {
+    width: 60%;
+    font-size: 20px;
+    /* font-weight: lighter; */
+    margin-bottom: 1.5em;
+}
+
+.post .link-anchor-tag {
+    text-decoration: none;
+}
+
+.post .footer-btn .btn-text {
+    text-align: left;
+}
+
+.post .save-btn, .post .hide-btn {
+    width: 80px;
+}
+
+.post .saved path {
+    fill: rgb(255, 145, 0);
+}
+
+.post .saved .btn-text {
+    color:rgb(255, 145, 0);
+}
+
+.post .footer-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.post.preview .post-header:hover .post-title {
+    color: rgb(139, 139, 139);
+}
+
+.post.preview .post-footer:hover{
+    background-color: rgb(247, 247, 247);
+    cursor: pointer;
+}
+
+.post.preview .post-header {
+    cursor: pointer;
+}

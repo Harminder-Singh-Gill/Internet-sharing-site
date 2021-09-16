@@ -1,0 +1,68 @@
+.comment-form {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 0 1px gray;
+}
+
+.comment-form .form-btns {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1em;
+    padding: 5px;
+    box-shadow: 0 0 0 1px gray;
+    background-color: rgb(240, 240, 240);
+    transition: background-color 200ms ease-in-out;
+}
+
+.comment-form .form-btn {
+    padding: 0.7em 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100px;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+}
+
+.comment-form .cmnt-submit-btn {
+    color: white;
+    background-color: rgb(78, 119, 255);
+}
+
+.comment-form .cancel-btn {
+    background-color: white;
+    box-shadow: 0 0 0 1px rgb(78, 119, 255);
+    color: rgb(78, 119, 255);
+}
+
+.comment-form .cancel-btn:hover {
+    background-color: rgba(78, 119, 255, 0.1);
+    transition: background-color 150ms ease-in-out;
+}
+
+.comment-form .cmnt-submit-btn:hover {
+    background-color: rgba(78, 119, 255, 0.8);
+    transition: background-color 150ms ease-in-out;
+}
+
+.comment-form .cmnt-submit-btn:disabled {
+    background-color: rgba(78, 119, 255, 0.5);
+    color: white;
+}
+
+.comment-form .comment-textarea {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 1em;
+    font-size: 14px;
+    height: 100px;
+    resize: vertical;
+}
+
+.comment-form .comment-textarea:focus + .form-btns {
+    background-color:rgb(236, 241, 255);
+}
+
